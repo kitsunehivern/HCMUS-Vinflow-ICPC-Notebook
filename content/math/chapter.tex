@@ -72,6 +72,16 @@ y = r\sin\theta\sin\phi & \theta = \textrm{acos}(z/\sqrt{x^2+y^2+z^2})\\
 z = r\cos\theta & \phi = \textrm{atan2}(y,x)
 \end{array}\]
 
+\subsection{Rectangle in rectangle}
+
+Suppose an $a \times b$ rectangle $T$ is given, with the notation
+arranged so that $a \geq b$. Then a $p \times q$ rectangle $R$ with $p \geq q$ fits into $T$ if and only if:
+
+\begin{itemize}
+	\item $p \leq a$ and $q \leq b$ or
+	\item $p > a$ and $q \leq b$ and $\left(\frac{a + b}{p + q}\right)^2 + \left(\frac{a - b}{p - q}\right)^2 \geq 2$.
+\end{itemize}
+
 \section{Derivatives/Integrals}
 \begin{align*}
 	\dfrac{d}{dx}\arcsin x = \dfrac{1}{\sqrt{1-x^2}} &&& \dfrac{d}{dx}\arccos x = -\dfrac{1}{\sqrt{1-x^2}} \\
