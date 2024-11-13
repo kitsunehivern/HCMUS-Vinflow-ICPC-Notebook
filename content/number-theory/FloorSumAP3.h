@@ -4,8 +4,8 @@
  * License: CC0
  * Source: https://asfjwd.github.io/2020-04-24-floor-sum-ap/
  * Description: Given $a, b, c, n, k_1, k_2$, compute $\sum_{x=0}^{n} x^{k_1} \left\lfloor \frac{ax + b}{c} \right\rfloor^{k_2}$.
- * Status: tested
  * Time: O((k_1 + k_2)^3 \log a)
+ * Status: tested
  */
 #pragma once
 
