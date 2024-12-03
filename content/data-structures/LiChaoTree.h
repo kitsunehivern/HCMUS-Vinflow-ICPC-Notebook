@@ -3,7 +3,7 @@
  * Date: 2024-11-14
  * License: CC0
  * Description: Add lines of form $ax + b$ where $l \leq x \leq r$ and query the minimum value at $x$.
- * Time: O(\log^2 N).
+ * Time: $O(\log^2 N)$ for insert and $O(\log N)$ for query.
  * Status: tested
  */
 

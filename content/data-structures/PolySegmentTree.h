@@ -5,7 +5,6 @@
  * Source: https://github.com/HoangDuyVu/Template-/blob/main/SegMentCalculus.cpp
  * Description: Segment tree with ability to add a polynomial to an interval, and compute sum of intervals.
  * Time: O(\log N).
- * Usage: PolySegmentTree tr(n);
  * Status: Not tested
  */
 
