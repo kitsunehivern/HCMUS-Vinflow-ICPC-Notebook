@@ -50,4 +50,16 @@ struct Dinic {
 		return flow;
 	}
 	bool leftOfMinCut(int a) { return lvl[a] != 0; }
+    vector<pii> minCutEdges() const {
+        vector<pii> cut;
+        for (int u = 0; u < sz(adj); ++u) {
+            if (lvl[u] == 0) continue;
+            for (auto &e : adj[u]) {
+                if (lvl[e.to] == 0 && e.oc > 0 && e.c == 0) {
+                    cut.emplace_back(u, e.to);
+                }
+            }
+        }
+        return cut;
+    }
 };

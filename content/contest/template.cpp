@@ -6,13 +6,12 @@ using namespace std;
 #define mp make_pair
 #define sz(x) (int)(x).size()
 #define all(x) (x).begin(), (x).end()
-#define rep(i, l, r) for (int i = (int)(l); i <= (int)(r); i++)
-#define per(i, r, l) for (int i = (int)(r); i >= (int)(l); i--)
 
 template<typename T> bool maximize(T& a, const T& b) { return a < b ? a = b, 1 : 0; }
 template<typename T> bool minimize(T& a, const T& b) { return a > b ? a = b, 1 : 0; }
 
 typedef long long ll;
+typedef vector<int> vi;
 typedef pair<int, int> pii;
 
 const string file = "";
